@@ -1,0 +1,13 @@
+kubeadm join ip --token token         --discovery-token-ca-cert-hash shash --ignore-preflight-errors=Mem
+kubeadm join ip --token token         --discovery-token-ca-cert-hash shash --ignore-preflight-errors all 172.31.19.230:6443
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR IsPrivilegedUser]: user is not running as root
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+
+kubeadm join 172.31.33.25:6443 --token fao2xs.f3sre3fegihnshbm         --discovery-token-ca-cert-hash sha256:110a234d8ef0c414fbbd212b5c819f41d0745c0f26684ba7ec8eada66329a93 
+--ignore-preflight-errors all 172.31.33.25:6443
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR IsPrivilegedUser]: user is not running as root
+[preflight] I
